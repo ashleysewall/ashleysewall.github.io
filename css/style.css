@@ -4,7 +4,7 @@ header{
     grid-template-rows: 200px 1fr;
     grid-template-areas:
         "headline headline"
-        "nav photo"
+        "nav photo";
 }
 
 h1{
@@ -15,7 +15,7 @@ h1{
     border-top: 10px solid #3f362a;;
     color:#000435;
     font-family: 'Lobster', Verdana, serif;
-    font-weight: 1000px;
+    font-weight: 900;
     font-size: 60px;
     text-transform: uppercase;
 }
@@ -103,27 +103,27 @@ main{
 h2{
     font-family: 'Times New Roman', Times, serif;
     font-size:45px;
-    font-weight: 800px;
+    font-weight: 800;
 }
 
 h3{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 p{
     font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight:300px;
+    font-weight:300;
 }
 
 ul{
     font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 strong{
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 td{
