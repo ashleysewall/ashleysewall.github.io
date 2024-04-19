@@ -57,21 +57,21 @@ main{
     color: #000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 650px 1fr;
     grid-template-areas: 
-        "pic pic introduction"
+        "pic introduction introduction"
         "government people economy";
 }
 
 #introduction{
     grid-area: introduction;
-    padding:20px;
+    padding:10px 20px 10px 5px;
     margin:20px;
 }
 
 #photos{
     grid-area:pic;
-    padding:20px;
+    padding:10px 5px 10px 20px;
     margin:20px;
 }
 
@@ -114,16 +114,16 @@ h3{
 
 p{
     font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight:300;
+    font-weight:400;
 }
 
 ul{
     font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 strong{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 td{
@@ -136,6 +136,7 @@ th{
 
 table{
     font-family:'Montserrat', Helvetica, sans-serif;
+    font-weight:400;
     border-spacing:5px;
     border:3px solid #3f362a
 }
