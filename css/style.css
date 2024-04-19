@@ -1,6 +1,19 @@
+a:link{
+    color: #0000ff;
+}
+a:visited{
+    color:#800080;
+}
+a:hover{
+    color:#ff0000
+}
+a:active{
+    color:#00ffff
+}
+
 header{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 720px);
     grid-template-rows: 200px 1fr;
     grid-template-areas:
         "headline headline"
@@ -20,19 +33,6 @@ h1{
     text-transform: uppercase;
 }
 
-a:link{
-    color: #0000ff;
-}
-a:visited{
-    color:#800080;
-}
-a:hover{
-    color:#ff0000
-}
-a:active{
-    color:#00ffff
-}
-
 nav{
     grid-area:nav;
     background-color: #f2e9dd;
@@ -50,14 +50,14 @@ nav{
 #caption{
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 13px;
-    color: #777;
+    color: #3f362a;
 }
 
 main{
     color: #000;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 650px 1fr;
+    grid-template-columns: 480px 480px 480px;
+    grid-template-rows: 500px 1fr;
     grid-template-areas: 
         "pic introduction introduction"
         "government people economy";
@@ -65,38 +65,38 @@ main{
 
 #introduction{
     grid-area: introduction;
-    padding:10px 20px 10px 5px;
+    padding:20px 20px 20px 30px;
     margin:20px;
 }
 
 #photos{
     grid-area:pic;
-    padding:10px 5px 10px 20px;
+    padding:20px 30px 20px 20px;
     margin:20px;
 }
 
 #captions{
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 13px;
-    color: #777;
+    color: #3f362a;
 }
 
 #government{
     grid-area: government;
-    background-color: #e0cbaf;
+    background-color: #f2e9dd;
     padding:10px;
 }
 
 #people-and-society{
     grid-area: people;
     padding: 10px;
-    border-top: 3px solid #e0cbaf;
-    border-bottom:3px solid #e0cbaf;
+    border-top: 3px solid #f2e9dd;
+    border-bottom:3px solid #f2e9dd;
 }
 
 #economy{
     grid-area: economy;
-    background-color: #e0cbaf;
+    background-color: #f2e9dd;
     padding: 10px;
 }
 
@@ -114,6 +114,7 @@ h3{
 
 p{
     font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: ;
     font-weight:400;
 }
 
@@ -143,10 +144,11 @@ table{
 
 footer{
     padding:30px 20px 10px;
-    margin:20px;
+    margin:20px auto 20px;
     border:5px dotted #3f362a;
     display:grid;
     grid-template-columns:repeat(3, 1fr);
+    max-width: 1440px;
     grid-template-areas: 
         "a b c";
 }
