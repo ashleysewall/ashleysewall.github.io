@@ -69,10 +69,16 @@ main{
     margin:20px;
 }
 
-#photo2{
+#photos{
     grid-area:pic;
     padding:20px;
     margin:20px;
+}
+
+#captions{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 13px;
+    color: #777;
 }
 
 #government{
