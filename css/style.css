@@ -1,5 +1,155 @@
-body{
-    color:antiquewhite;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
+header{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+        "headline headline"
+        "nav photo"
+}
+
+h1{
+    grid-area:headline;
+    background-color: #f2e9dd;
+    padding: 20px;
+    margin: 20px;
+    border-top: 10px solid #3f362a;;
+    color:#000435;
+    font-family: 'Lobster', Verdana, serif;
+    font-weight: 1000px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+a:link{
+    color: #0000ff;
+}
+a:visited{
+    color:#800080;
+}
+a:hover{
+    color:#ff0000
+}
+a:active{
+    color:#00ffff
+}
+
+nav{
+    grid-area:nav;
+    background-color: #f2e9dd;
+    line-height: 100px;
+    padding:20px;
+    margin:20px;
+    font-size: 25px;
+}
+
+#photo{
+    grid-area:photo;
+    padding:20px;
+}
+
+#caption{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 13px;
+    color: #777;
+}
+
+main{
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "pic pic introduction"
+        "government people economy";
+}
+
+#introduction{
+    grid-area: introduction;
+    padding:20px;
+    margin:20px;
+}
+
+#photo2{
+    grid-area:pic;
+    padding:20px;
+    margin:20px;
+}
+
+#government{
+    grid-area: government;
+    background-color: #e0cbaf;
+    padding:10px;
+}
+
+#people-and-society{
+    grid-area: people;
+    padding: 10px;
+    border-top: 3px solid #e0cbaf;
+    border-bottom:3px solid #e0cbaf;
+}
+
+#economy{
+    grid-area: economy;
+    background-color: #e0cbaf;
+    padding: 10px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:45px;
+    font-weight: 800px;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600px;
+}
+
+p{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight:300px;
+}
+
+ul{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 300px;
+}
+
+strong{
+    font-weight: 600px;
+}
+
+td{
+    border:1px solid #3f362a;
+}
+
+th{
+    border:1px solid #3f362a;
+}
+
+table{
+    font-family:'Montserrat', Helvetica, sans-serif;
+    border-spacing:5px;
+    border:3px solid #3f362a
+}
+
+footer{
+    padding:30px 20px 10px;
+    margin:20px;
+    border:5px dotted #3f362a;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas: 
+        "a b c";
+}
+
+#a{
+    grid-area:a;
+}
+#b{
+    grid-area:b;
+}
+#c{
+    grid-area:c;
 }
