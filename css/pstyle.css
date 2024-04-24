@@ -1,0 +1,64 @@
+a:link{
+    color: #0000ff;
+}
+a:visited{
+    color:#800080;
+}
+a:hover{
+    color:#ff0000
+}
+a:active{
+    color:#00ffff
+}
+
+header{
+    background-color:#36454f;
+    color:#ffffff;
+    padding:20px;
+    display: grid;
+    grid-template-columns: 200px 840 200px;
+    grid-template-rows: 200px 50px;
+    grid-template-areas:
+        ". portfolio ."
+        "name . contact";
+}
+
+h1{
+    grid-area: portfolio;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform:uppercase;
+    font-size: 90px;
+}
+
+#name{
+    grid-area: name;
+    font-size:16px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#contact{
+    grid-area:contact;
+    text-align:right;
+    font-size:16px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#about{
+    background-color:#f1dede;
+    color:#36454f;
+}
+
+
+
+
+#specialties{
+    background-color:#36454f;
+    color:#ffffff;
+    display: grid;
+    grid-template-columns:repeat(3,430px);
+    grid-template-rows:repeat(2,1fr);
+    grid-template-areas: 
+        "head head head"
+        "pr gd j";
+}
+
