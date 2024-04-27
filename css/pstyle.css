@@ -30,6 +30,10 @@ h1{
     font-size: 90px;
 }
 
+h3{
+    font-family:'Times New Roman', Times, serif
+}
+
 #name{
     grid-area: name;
     font-size:16px;
@@ -46,10 +50,31 @@ h1{
 #about{
     background-color:#f1dede;
     color:#36454f;
+    padding: 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repear(3,1fr);
+    grid-template-areas:
+        "heada heada heada"
+        "body body pic"
+        "skills skills pic";
 }
 
+#heada{
+    grid-area:heada;
+}
 
+#body{
+    grid-area:body;
+}
 
+#skills{
+    grid-area:skills;
+}
+
+#pic{
+    grid-area:pic;
+}
 
 #specialties{
     background-color:#36454f;
@@ -58,7 +83,20 @@ h1{
     grid-template-columns:repeat(3,430px);
     grid-template-rows:repeat(2,1fr);
     grid-template-areas: 
-        "head head head"
+        "headb headb headb"
         "pr gd j";
 }
 
+footer{
+    grid-template-columns:repeat(3, 400px);
+    grid-template-areas:
+        "name . contactf";
+}
+
+#name{
+    grid-area:name;
+}
+
+#contactf{
+    grid-area:contactf;
+}
