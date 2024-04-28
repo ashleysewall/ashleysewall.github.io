@@ -30,8 +30,17 @@ h1{
     font-size: 90px;
 }
 
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h3{
-    font-family:'Times New Roman', Times, serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
 }
 
 #name{
@@ -100,3 +109,15 @@ footer{
 #contactf{
     grid-area:contactf;
 }
+
+/*journalism css*/
+#more {display: none;
+}
+
+#explain{
+    font-style: oblique;
+    background-color:#f1dede;
+    padding:30px;
+}
+
+
