@@ -57,10 +57,19 @@
         <script type="text/javascript" src="slick/slick/slick.min.js" charset="utf-8"></script>
         <script type="javascript">
           $(document).ready(function(){
-            $('.slideshow').slick({
-            });
-          });
+            $('slideshow').slick({
+              slidesToShow: 3,
+              slidesToScroll:1,
+              autoplay:true,
+              autoplaySpeed: 1000,
+            })
+          })
         </script>
+
+        $(document).ready(function(){
+          $('.slideshow').slick({
+          });
+        });
     </body>
 
 </html>
