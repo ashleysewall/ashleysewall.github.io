@@ -88,12 +88,37 @@ p{
 #specialties{
     background-color:#36454f;
     color:#ffffff;
+    margin:20px;
     display: grid;
-    grid-template-columns:repeat(3,430px);
+    grid-template-columns:repeat(4,200px);
     grid-template-rows:repeat(2,1fr);
     grid-template-areas: 
-        "headb headb headb"
-        "pr gd j";
+        "headb headb headb headb"
+        "pr gd j r";
+}
+
+#headb{
+    grid-area:headb;
+}
+
+#pr{
+    grid-area:pr;
+    color: #ffffff;
+}
+
+#gd{
+    grid-area:gd;
+    color:#ffffff;
+}
+
+#j{
+    grid-area:j;
+    color:#ffffff;
+}
+
+#r{
+    grid-area:r;
+    color:#ffffff;
 }
 
 footer{
@@ -122,5 +147,5 @@ footer{
 
 /*resume css*/
 #resume{
-    padding:20px;
+    margin:20px auto;
 }
