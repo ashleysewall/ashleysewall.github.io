@@ -222,7 +222,7 @@ footer{
 }
 .arrows{
 	position:absolute;
-	top:15px;
+	top:-25px;
 	left:0;
 	z-index:100;
 }
@@ -253,7 +253,7 @@ footer{
 .buttons{
 	position:absolute;
 	top:5px;
-	right:0px;
+	right:-50px;
 	z-index:100;
 }
 /*
