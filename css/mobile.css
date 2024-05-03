@@ -1,0 +1,128 @@
+@media (max-width:414px){
+    
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size:30px
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 16px;
+    }
+    header{
+        padding:5px;
+        margin:2px;
+        display: grid;
+        grid-template-columns: 404px;
+        grid-template-rows: 50px 50px 1fr;
+        max-width:404px;
+        grid-template-areas:
+            "portfolio"
+            "name"
+            "nav";
+    }
+    #nav{
+        grid-area:nav;
+        font-size:16px;
+    }
+    #name{
+        grid-area: name;
+        text-align:left;
+        font-size:16px;
+    }
+
+    #about{
+        padding:5px;
+        margin:2px;
+        display:grid;
+        grid-template-columns:404px;
+        max-width:404px;
+        grid-template-rows:50px 200px 1fr 200px;
+        grid-template-areas:
+            "heada"
+            "pic"
+            "body"
+            "skills";
+    }
+    
+    #heada{
+        grid-area:heada;
+        padding:0px;
+        margin:0px;
+    }
+    
+    #body{
+        grid-area:body;
+        max-width:350px;
+    }
+    
+    #skills{
+        grid-area:skills;
+    }
+    
+    #pic{
+        grid-area:pic;
+        width:200px;
+        height:200px;
+    }
+    #specialties{
+        margin:2px;
+        padding:5px;
+        display: grid;
+        max-width:404px;
+        grid-template-columns:404px;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: 
+            "headb"
+            "pr"
+            "gd"
+            "j";
+    }
+    
+    #headb{
+        grid-area:headb;
+    }
+    
+    #pr{
+        grid-area:pr;
+        max-width:350px;
+        border: 0px;
+        padding: 5px;
+    }
+    
+    #gd{
+        grid-area:gd;
+        max-width:350px;
+        border: 0px;
+        padding: 5px;
+    }
+    
+    #j{
+        grid-area:j;
+        max-width:350px;
+        border: 0px;
+        padding: 5px;
+    }
+
+    footer{
+        margin:5px;
+        max-width:404px;
+        border:1px solid #36454f;
+        grid-template-columns:404px;
+        grid-template-areas:
+            "name"
+            "contactf";
+    }
+    
+    #name2{
+        grid-area:name;
+        padding:2px
+    }
+    
+    #contactf{
+        grid-area:contactf;
+        padding:2px;
+        text-align:left;
+    }
+}
