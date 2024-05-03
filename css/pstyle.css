@@ -162,7 +162,8 @@ footer{
         "navj"
         "fulbright"
         "gaza"
-        "sae";
+        "sae"
+        "centennial";
 }
 
 #headj{
@@ -189,6 +190,9 @@ footer{
 
 #sae{
     grid-area:sae;
+}
+#centennial{
+    grid-area:centennial;
 }
 
 .explain{
@@ -254,7 +258,7 @@ footer{
 	right:-50px;
 	z-index:100;
 }
-/*
+/* extra code I don't like for slideshow
 .pagination{
 	float:left;
 	margin:0 2px;
