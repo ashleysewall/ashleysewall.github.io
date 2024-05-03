@@ -48,6 +48,7 @@ header{
     padding:20px;
     display: grid;
     grid-template-columns: 200px 840px 200px;
+    max-width:1280px;
     grid-template-rows: 200px 1fr;
     grid-template-areas:
         ". portfolio name"
@@ -107,6 +108,7 @@ header{
     margin:20px;
     padding:40px;
     display: grid;
+    max-width:1280px;
     grid-template-columns:repeat(3, 400px);
     grid-template-rows: 100px 1fr;
     grid-template-areas: 
@@ -138,6 +140,7 @@ header{
 
 footer{
     margin:20px;
+    max-width:1280px;
     border:2px solid #36454f;
     grid-template-columns:repeat(2, 1fr);
     grid-template-areas:
