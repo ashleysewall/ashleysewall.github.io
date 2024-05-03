@@ -74,6 +74,7 @@ header{
     padding: 20px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
+    max-width:1280px;
     grid-template-rows:repeat(3,1fr);
     grid-template-areas:
         "heada heada heada"
@@ -83,6 +84,8 @@ header{
 
 #heada{
     grid-area:heada;
+    padding:20px;
+    margin:20px;
 }
 
 #body{
