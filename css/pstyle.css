@@ -122,9 +122,9 @@ p{
 }
 
 footer{
-    grid-template-columns:repeat(3, 400px);
+    grid-template-columns:repeat(2, 1fr);
     grid-template-areas:
-        "name . contactf";
+        "name contactf";
 }
 
 #name2{
@@ -133,6 +133,7 @@ footer{
 
 #contactf{
     grid-area:contactf;
+    text-align:center;
 }
 
 /*journalism css*/
