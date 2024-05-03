@@ -150,9 +150,9 @@ footer{
     margin:20px auto;
 }
 
-/*pr*/
+/*slideshow*/
 
-.football{	
+.slideshow{	
 	margin:0;
 	padding:0;
 	-moz-box-sizing:border-box;
@@ -160,11 +160,11 @@ footer{
 	box-sizing:border-box;
 }
 
-.football{
+.slideshow{
 	display:none;
 	margin:50px auto;
 }
-.football-control{
+.slideshow-control{
 	padding-bottom:20px;
 }
 .arrows{
@@ -203,6 +203,7 @@ footer{
 	right:0px;
 	z-index:100;
 }
+/*
 .pagination{
 	float:left;
 	margin:0 2px;
@@ -219,3 +220,4 @@ footer{
 .active-button a{
 	background-position:0 -30px;
 }
+*/
