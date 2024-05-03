@@ -125,4 +125,89 @@
         padding:2px;
         text-align:left;
     }
+
+    /*resume css*/
+    #resume{
+        margin:5px auto;
+        width:400px;
+        height:auto;
+    }
+    /*journalism*/
+    #journalismport{
+        margin:5px;
+        display:grid;
+        grid-template-columns: 400px;
+        grid-template-areas:
+            "headj"
+            "navj"
+            "fulbright"
+            "gaza"
+            "sae"
+            "centennial";
+    }
+    
+    #headj{
+        grid-area: headj;
+        padding:5px;
+    }
+    
+    #navj{
+        grid-area:navj;
+        padding:5px;
+    }
+    
+    #fulbright{
+        grid-area:fulbright;
+        padding:5px;
+        border-top: 1px solid #36454f;
+        border-bottom: 1px solid #36454f;
+    }
+    
+    #gaza{
+        grid-area:gaza;
+        border-bottom: 1px solid #36454f;
+        padding:5px;
+    }
+    
+    #sae{
+        grid-area:sae;
+        border-bottom: 1px solid #36454f;
+        padding:5px;
+    }
+    #centennial{
+        grid-area:centennial;
+        border-bottom: 1px solid #36454f;
+        padding:5px;
+    }
+    
+    .explain{
+        padding:10px;
+    }
+    /*projects*/
+    #project{
+        display:grid;
+        margin:2px;
+        padding:5px;
+        grid-template-columns:400px;
+        max-width:400px;
+        grid-template-areas:
+            "name"
+            "explainer"
+            "content";
+    }
+    #projectname{
+        grid-area:name;
+        padding:5px;
+    }
+    #projectexp{
+        grid-area:explainer;
+    }
+    
+    #content{
+        grid-area:content;
+    }
+    .prj{
+        width:400px;
+        height:auto;
+    }
 }
