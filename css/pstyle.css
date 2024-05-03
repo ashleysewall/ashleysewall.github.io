@@ -191,7 +191,7 @@ footer{
     grid-area:sae;
 }
 
-#explain{
+.explain{
     font-style: oblique;
     background-color:#f1dede;
     padding:30px;
