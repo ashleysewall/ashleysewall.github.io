@@ -85,16 +85,18 @@ p{
     grid-area:pic;
 }
 
+
 #specialties{
     background-color:#36454f;
     color:#ffffff;
     margin:20px;
+    padding:40px;
     display: grid;
-    grid-template-columns:repeat(4,200px);
-    grid-template-rows:repeat(2,1fr);
+    grid-template-columns:repeat(3, 400px);
+    grid-template-rows: 100px 1fr;
     grid-template-areas: 
-        "headb headb headb headb"
-        "r pr gd j";
+        "headb headb headb"
+        "pr gd j";
 }
 
 #headb{
@@ -103,22 +105,20 @@ p{
 
 #pr{
     grid-area:pr;
-    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px;
 }
 
 #gd{
     grid-area:gd;
-    color:#ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px;
 }
 
 #j{
     grid-area:j;
-    color:#ffffff;
-}
-
-#r{
-    grid-area:r;
-    color:#ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px;
 }
 
 footer{
