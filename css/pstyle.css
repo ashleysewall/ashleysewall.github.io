@@ -237,7 +237,6 @@ footer{
 }
 .arrow-left{
 	background-position: 0 0;
-    size: 30px;
 }
 .arrow-left:hover{
 	background-position:0 -16px;
@@ -245,7 +244,6 @@ footer{
 .arrow-right{
 	background-position:-20px 0;
 	left:20px;
-    size:30px;
 }
 .arrow-right:hover{
 	background-position:-20px -16px;
