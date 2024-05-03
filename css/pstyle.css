@@ -13,27 +13,38 @@ a:active{
 
 h1{
     grid-area: portfolio;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Sofia", Verdana, sans-serif;
     text-transform:uppercase;
     font-size: 90px;
 }
 
 h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Roboto", Verdana, Tahoma, sans-serif;
+    font-size:40px;
+    font-weight:700;
 }
 
 h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
+    font-size:30px;
+    font-weight:500;
+}
+
+h4{
+    font-family:"Roboto", Verdana, Tahoma, sans-serif;
+    font-size:20px;
+    font-weight:300;
 }
 
 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
 }
 
 header{
     background-color:#f1dede;
     color:#36454f;
+    margin:20px;
     padding:20px;
     display: grid;
     grid-template-columns: 200px 840px 200px;
@@ -59,10 +70,11 @@ header{
 #about{
     background-color:#36454f;
     color:#f1dede;
+    margin:20px;
     padding: 20px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repear(3,1fr);
+    grid-template-rows:repeat(3,1fr);
     grid-template-areas:
         "heada heada heada"
         "body body pic"
@@ -122,6 +134,8 @@ header{
 }
 
 footer{
+    margin:20px;
+    border:2px solid #36454f;
     grid-template-columns:repeat(2, 1fr);
     grid-template-areas:
         "name contactf";
@@ -129,15 +143,52 @@ footer{
 
 #name2{
     grid-area:name;
+    padding:10px
 }
 
 #contactf{
     grid-area:contactf;
-    text-align:center;
+    padding:10px;
+    text-align:right;
 }
 
 /*journalism css*/
-#more {display: none;
+#journalismport{
+    margin:20px;
+    display:grid;
+    grid-template-columns: 1240px;
+    grid-template-areas:
+        "headj"
+        "navj"
+        "fulbright"
+        "gaza"
+        "sae";
+}
+
+#headj{
+    grid-area: headj;
+    padding:20px;
+    background-color:#36454f;
+    color:#f1dede;
+}
+
+#navj{
+    grid-area:navj;
+    padding:0px 20px 20px 20px;
+    background-color:#f1dede;
+    color:#36454f;
+}
+
+#fulbright{
+    grid-area:fulbright;
+}
+
+#gaza{
+    grid-area:gaza;
+}
+
+#sae{
+    grid-area:sae;
 }
 
 #explain{
@@ -145,6 +196,7 @@ footer{
     background-color:#f1dede;
     padding:30px;
 }
+
 
 /*resume css*/
 #resume{
@@ -222,3 +274,30 @@ footer{
 	background-position:0 -30px;
 }
 */
+
+/*Projects*/
+
+#project{
+    display:grid;
+    margin:20px;
+    padding:20px;
+    grid-template-columns:1220px;
+    grid-template-areas:
+        "name"
+        "explainer"
+        "content";
+}
+#projectname{
+    grid-area:name;
+    padding:20px;
+    background-color:#36454f;
+    color:#f1dede;
+}
+#projectexp{
+    grid-area:explainer;
+    color:#36454f;
+}
+
+#content{
+    grid-area:content;
+}
