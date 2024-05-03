@@ -9,13 +9,36 @@
     <body>
         <header>
             <h1>Portfolio</h1>
+            <section id="nav">
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="#">Public Relations Projects</a>
+                    <ul>
+                        <li><a href="football.html">Miami Hurricanes Football Media Kit</a></li>
+                        <li><a href="pollinator.html">Pollinator Protection Program</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">Graphic Design Projects</a>
+                        <ul>
+                            <li><a href="rebrand.html"><abbr title="American Music Therapy Association">AMTA</abbr> Rebrand</a></li>
+                            <li><a href="design.html">Euphoria Design Campaign</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="journalism.html">Journalism Projects</a>
+                    </li>
+                </ul>
+            </section>
             <p id="name">Ashley Sewall</p>
-            <a href="#contactf" id="contact">Contact</a>
         </header>
 
         <main>
             <section id="about">
-                <h3 id="heada">About Me</h3>
+                <h3 id="heada">About Ashley Sewall</h3>
                 <p id="body">In <time datetime="2022">2022</time>, I made the decision to move over 1,500 miles from my hometown to pursue a bachelor’s degree in public relations and graphic design at the University of Miami, and I have never looked back. In my first year, I was given the opportunity to travel to Cannes, France, for the Cannes Lions Festival of Creativity to witness the best work in public relations and advertising, one of the most influential moments in my career. I took what I learned in Cannes and brought it to Miami where I implemented it into my coursework and extracurriculars. I currently work as the Copy Chief for our student newspaper, The Miami Hurricane, where I have also written current and breaking news articles. In the fall, I will serve as the Public Relations Coordinator of the Board of Communications in Student Government and as the Vice Chair of Hurricane Productions where I will oversee the marketing for one of the largest groups on campus. Outside of university, I have applied my skills to an internship with DEKA Research and Development Corp. with their marketing and human resources department and will soon do so with Coca-Cola Beverages Northeast as a public policy and communications intern. I look forward to continuing to learn and hone my skills in the public relations field through the rest of my time at the University of Miami. The best way to contact me is by email.</p>
             
                 <article id="skills">
@@ -47,21 +70,6 @@
                     <p>Journalism has always been a passion of mine, likely due to my love of reading. I spent my second year of college working as the Copy Chief of The Miami Hurricane, the school newspaper of the University of Miami. In this role, I read through articles before publication and edited them thoroughly, learning more about journalistic writing and AP Style. Later, I began to write for the paper in the news section, especially enjoying breaking news. Next school year I will be the News Editor of the paper.</p>
                 </section>
             </section>
-
-            <nav>
-                <a href="resume.html">Resume</a>
-                <p>Public Relations Projects</p>
-                <ul>
-                    <li><a href="football.html">Miami Hurricanes Football Media Kit</a></li>
-                    <li><a href="pollinator.html">Pollinator Protection Program</a></li>
-                </ul>
-                <p>Graphic Design Projects</p>
-                <ul>
-                    <li><a href="rebrand.html"><abbr title="American Music Therapy Association">AMTA</abbr> Rebrand</a></li>
-                    <li><a href="design.html">Euphoria Design Campaign</a></li>
-                </ul>
-                <a href="journalism.html" id="j">Journalism Projects</a>
-            </nav>
         </main>
 
         <footer>
@@ -75,5 +83,24 @@
                 <a href="linkedin.com/ashley-sewall">LinkedIn</a>
             </address>
         </footer>
+
+        <script src="jquery-plugin.js" type="text/javascript"></script>
+        <script src="tendina-master/dist/tendina.js" type="text/javascript"></script>
+
+        <script>
+            $('#menu').tendina({
+                animate: true,
+                speed: 1000,
+                onHover: true,
+                hoverDelay: 300,
+                activeMenu: $('.my-active-menu'),
+                openCallback: function(clickedEl) {
+                    clickedEl.addClass('opened');
+                },
+                closeCallback: function(clickedEl) {
+                    clickedEl.addClass('closed');
+                }
+            });
+        </script>
     </body>
 </html>

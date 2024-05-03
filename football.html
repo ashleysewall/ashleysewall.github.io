@@ -9,8 +9,31 @@
     <body>
         <header>
             <h1>Portfolio</h1>
+            <section id="nav">
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="#">Public Relations Projects</a>
+                    <ul>
+                        <li><a href="football.html">Miami Hurricanes Football Media Kit</a></li>
+                        <li><a href="pollinator.html">Pollinator Protection Program</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">Graphic Design Projects</a>
+                        <ul>
+                            <li><a href="rebrand.html"><abbr title="American Music Therapy Association">AMTA</abbr> Rebrand</a></li>
+                            <li><a href="design.html">Euphoria Design Campaign</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="journalism.html">Journalism Projects</a>
+                    </li>
+                </ul>
+            </section>
             <p id="name">Ashley Sewall</p>
-            <a href="#contactf" id="contact">Contact</a>
         </header>
 
         <main>
@@ -83,11 +106,28 @@
 
         <script src="jquery-plugin.js" type="text/javascript"></script>
         <script src="krakatoa-master/src/jquery.krakatoa.js" type="text/javascript"></script>
+        <script src="tendina-master/dist/tendina.js" type="text/javascript"></script>
 
         <script>
             $(window).on('load',function(){
                 $('.slideshow').krakatoa(
                     width="1280px", height="auto")
+            });
+        </script>
+
+        <script>
+            $('#menu').tendina({
+                animate: true,
+                speed: 1000,
+                onHover: true,
+                hoverDelay: 300,
+                activeMenu: $('.my-active-menu'),
+                openCallback: function(clickedEl) {
+                    clickedEl.addClass('opened');
+                },
+                closeCallback: function(clickedEl) {
+                    clickedEl.addClass('closed');
+                }
             });
         </script>
     </body>

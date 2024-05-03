@@ -11,18 +11,6 @@ a:active{
     color:#00ffff
 }
 
-header{
-    background-color:#36454f;
-    color:#ffffff;
-    padding:20px;
-    display: grid;
-    grid-template-columns: 200px 840 200px;
-    grid-template-rows: 200px 50px;
-    grid-template-areas:
-        ". portfolio ."
-        "name . contact";
-}
-
 h1{
     grid-area: portfolio;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -43,22 +31,34 @@ p{
     font-size: 12pt;
 }
 
-#name{
-    grid-area: name;
+header{
+    background-color:#f1dede;
+    color:#36454f;
+    padding:20px;
+    display: grid;
+    grid-template-columns: 200px 840px 200px;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+        ". portfolio name"
+        "nav nav .";
+}
+
+#nav{
+    grid-area:nav;
+    text-align:left;
     font-size:16px;
     font-family:'Times New Roman', Times, serif;
 }
-
-#contact{
-    grid-area:contact;
+#name{
+    grid-area: name;
     text-align:right;
-    font-size:16px;
+    padding:20px 20px 10px 0px;
     font-family:'Times New Roman', Times, serif;
 }
 
 #about{
-    background-color:#f1dede;
-    color:#36454f;
+    background-color:#36454f;
+    color:#f1dede;
     padding: 20px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -87,8 +87,8 @@ p{
 
 
 #specialties{
-    background-color:#36454f;
-    color:#ffffff;
+    background-color:#f1dede;
+    color:#36454f;
     margin:20px;
     padding:40px;
     display: grid;
