@@ -210,4 +210,8 @@
         width:400px;
         height:auto;
     }
+
+    .buttons{
+        display:none;
+    }
 }
