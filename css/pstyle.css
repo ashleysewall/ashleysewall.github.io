@@ -94,7 +94,7 @@ p{
     grid-template-rows:repeat(2,1fr);
     grid-template-areas: 
         "headb headb headb headb"
-        "pr gd j r";
+        "r pr gd j";
 }
 
 #headb{
